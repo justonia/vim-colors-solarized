@@ -541,7 +541,7 @@ exe "hi! Normal"         .s:fmt_none   .s:fg_base0  .s:bg_back
 exe "hi! Comment"        .s:fmt_ital   .s:fg_base01 .s:bg_none
 "       *Comment         any comment
 
-exe "hi! Constant"       .s:fmt_none   .s:fg_cyan   .s:bg_none
+exe "hi! Constant"       .s:fmt_none   .s:fg_violet   .s:bg_none
 "       *Constant        any constant
 "        String          a string constant: "this is a string"
 "        Character       a character constant: 'c', '\n'
@@ -553,14 +553,19 @@ exe "hi! Identifier"     .s:fmt_none   .s:fg_blue   .s:bg_none
 "       *Identifier      any variable name
 "        Function        function name (also: methods for classes)
 "
-exe "hi! Statement"      .s:fmt_none   .s:fg_green  .s:bg_none
+exe "hi! Statement"      .s:fmt_none   .s:fg_blue  .s:bg_none
 "       *Statement       any statement
-"        Conditional     if, then, else, endif, switch, etc.
 "        Repeat          for, do, while, etc.
 "        Label           case, default, etc.
 "        Operator        "sizeof", "+", "*", etc.
 "        Keyword         any other keyword
 "        Exception       try, catch, throw
+
+exe "hi! Statement"      .s:fmt_none   .s:fg_green  .s:bg_none
+"        *Conditional     if, then, else, endif, switch, etc.
+
+exe "hi! Function"      .s:fmt_none   .s:fg_cyan  .s:bg_none
+"        *Function     call a function
 
 exe "hi! PreProc"        .s:fmt_none   .s:fg_orange .s:bg_none
 "       *PreProc         generic Preprocessor
@@ -571,9 +576,14 @@ exe "hi! PreProc"        .s:fmt_none   .s:fg_orange .s:bg_none
 
 exe "hi! Type"           .s:fmt_none   .s:fg_yellow .s:bg_none
 "       *Type            int, long, char, etc.
-"        StorageClass    static, register, volatile, etc.
 "        Structure       struct, union, enum, etc.
 "        Typedef         A typedef
+
+exe "hi! StorageClass"   .s:fmt_none   .s:fg_blue .s:bg_none
+"        *StorageClass    static, register, volatile, etc.
+"        Structure       struct, union, enum, etc.
+"        Typedef         A typedef
+
 
 exe "hi! Special"        .s:fmt_none   .s:fg_red    .s:bg_none
 "       *Special         any special symbol
