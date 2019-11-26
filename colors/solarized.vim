@@ -564,7 +564,7 @@ exe "hi! Statement"      .s:fmt_none   .s:fg_blue  .s:bg_none
 exe "hi! Statement"      .s:fmt_none   .s:fg_green  .s:bg_none
 "        *Conditional     if, then, else, endif, switch, etc.
 
-exe "hi! Function"      .s:fmt_none   .s:fg_cyan  .s:bg_none
+exe "hi! Function"      .s:fmt_none   .s:fg_yellow  .s:bg_none
 "        *Function     call a function
 
 exe "hi! PreProc"        .s:fmt_none   .s:fg_orange .s:bg_none
@@ -574,7 +574,7 @@ exe "hi! PreProc"        .s:fmt_none   .s:fg_orange .s:bg_none
 "        Macro           same as Define
 "        PreCondit       preprocessor #if, #else, #endif, etc.
 
-exe "hi! Type"           .s:fmt_none   .s:fg_yellow .s:bg_none
+exe "hi! Type"           .s:fmt_none   .s:fg_cyan .s:bg_none
 "       *Type            int, long, char, etc.
 "        Structure       struct, union, enum, etc.
 "        Typedef         A typedef
